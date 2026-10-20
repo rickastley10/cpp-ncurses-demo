@@ -7,6 +7,7 @@ int main(){
     noecho();
     curs_set(0);
     nodelay(stdscr, TRUE);
+    keypad(stdscr, TRUE);
 
     int ch;
 

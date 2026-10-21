@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <ncurses.h>
+#include <time.h>
 
 int main(){
     initscr();
@@ -10,6 +11,9 @@ int main(){
     keypad(stdscr, TRUE);
 
     int ch;
+
+    srand(time(NULL));
+    int random = (rand() % 3) + 1;
 
     while (1==1)
     {

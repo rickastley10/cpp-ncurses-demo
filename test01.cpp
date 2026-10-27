@@ -28,7 +28,7 @@ int main(){
 
 
         mvprintw(10, 10, "hello world");
-        mvaddstr(5, 10, ACS_CKBOARD);
+        mvaddch(5, 10, ACS_CKBOARD);
 
         refresh();
         napms(100);

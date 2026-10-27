@@ -10,7 +10,7 @@ int main(){
     curs_set(0);
     nodelay(stdscr, TRUE);
     keypad(stdscr, TRUE);
-    setlocale(LC_ALL, "");
+
 
     int ch;
 
@@ -28,7 +28,7 @@ int main(){
 
 
         mvprintw(10, 10, "hello world");
-        mvaddstr(5, 10, "\u2588");
+        mvaddstr(5, 10, ACS_CKBOARD);
 
         refresh();
         napms(100);
